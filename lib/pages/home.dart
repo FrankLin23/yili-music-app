@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:yili_music_app/widgets/header.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key?key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center (
-        child: ElevatedButton(
-          onPressed: (){
+      body: Column(
+        children: <Widget>[
+          const Header(),
+          ElevatedButton(onPressed: (){
             Navigator.pushNamed(context, '/login');
-          },
-          child: const Text("登录"),
-        ),
+          }, child: const Text("登录"))
+        ],
       ),
     );
   }

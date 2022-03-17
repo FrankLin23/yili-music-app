@@ -15,6 +15,7 @@ class YuanLiMusic extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '原力音乐',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: primary,
         tabBarTheme: tabBarTheme
